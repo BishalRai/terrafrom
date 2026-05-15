@@ -1,0 +1,32 @@
+# === Terraform state — NEVER commit these ===
+# State files contain your real infrastructure details and may contain secrets
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform variable files that contain real secrets
+*.tfvars
+*.tfvars.json
+
+# === Terraform internals — auto-generated, no need to commit ===
+.terraform/
+.terraform.lock.hcl
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# === macOS junk ===
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# === Editor junk ===
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
