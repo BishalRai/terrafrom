@@ -74,3 +74,18 @@ terraform destroy
 - `terraform.tfvars` is in `.gitignore` — it must never be committed
 - The state file (`terraform.tfstate`) is also gitignored — it can contain sensitive data
 - For team use, store state remotely (e.g. [Terraform Cloud](https://app.terraform.io) or a DO Spaces backend)
+
+## Demo
+
+### 1. terraform init & plan
+![terraform init and plan](screenshots/terraform-init.png)
+
+### 2. terraform apply
+![terraform apply](screenshots/terraform-apply.png)
+
+### 3. SSH into the Droplet
+![SSH into Droplet](screenshots/ssh-droplet.png)
+
+### 4. terraform destroy
+![terraform destroy](screenshots/terraform-destroy.png)
+
