@@ -21,8 +21,8 @@ Provisions a Ubuntu 24.04 VPS on DigitalOcean with Nginx, UFW firewall, and Git 
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-   cd YOUR_REPO
+   git clone https://github.com/BishalRai/terrafrom.git
+   cd terraform
    ```
 
 2. **Create your secrets file** (this is gitignored — never commit it)
@@ -30,6 +30,10 @@ Provisions a Ubuntu 24.04 VPS on DigitalOcean with Nginx, UFW firewall, and Git 
    cp terraform.tfvars.example terraform.tfvars
    ```
    Then fill in your real values in `terraform.tfvars`.
+
+   `do_token        = "dop_v1_YOUR_DIGITALOCEAN_TOKEN_HERE"`
+
+   `ssh_fingerprint = "YOUR_SSH_KEY_MD5_FINGERPRINT_HERE"`
 
 3. **Initialise Terraform** (downloads the DigitalOcean provider)
    ```bash

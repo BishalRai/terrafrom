@@ -1,0 +1,5 @@
+# Copy this file to terraform.tfvars and fill in your real values
+# terraform.tfvars is gitignored — never commit it
+
+do_token        = "dop_v1_YOUR_DIGITALOCEAN_TOKEN_HERE"
+ssh_fingerprint = "YOUR_SSH_KEY_MD5_FINGERPRINT_HERE"
